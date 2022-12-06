@@ -31,7 +31,7 @@ const Section = ({data}) =>{
             label={'About me'}
             data={data?.basics?.summary}
           />
-          <div>
+          <div className='mb-2'>
           <SectionTitle
             text={'Languages'}
             icon={<FaLanguage/>}
@@ -39,8 +39,8 @@ const Section = ({data}) =>{
           {
             data?.languages?.map((e,i)=>{
               return <div key={i}>
-                      <p className='text-white'><span className='font-bold text-white mr-2'>{e.lang} :</span> {e.type}</p>
-                    </div>
+                        <p className='text-white'><span className='font-bold uppercase text-white mr-2'>{e.lang} :</span> {e.type}</p>
+                     </div>
             })
           }
           </div>
