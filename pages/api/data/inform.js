@@ -66,7 +66,7 @@ export const cvInformation = {
     "endDate": "05/2013"
   },{
     "institution": "Kharkiv Engineering and Pedagogical Academy",
-    "area": "Heat energy",
+    "area": "Department of Thermal Power Engineering and Energy Saving Technologies",
     "studyType": "Specialist",
     "startDate": "09/2013",
     "endDate": "05/2017"
@@ -78,30 +78,30 @@ export const cvInformation = {
     "url": "https://certificate.com"
   }],
   "skills": {
-    "proficient": [
+    "advanced": [
       "HTML",
       "CSS",
-      "SASS",
       "JavaScript",
       "React",
-      "Git"
+      "Git",
+      "Tailwind",
+      "Figma"
     ],
-    "comfortable": [
-      "Nextjs",
-      "Redux",
-      "Tailwind"
-    ],
-    "familiar": [
+    "medium": [
       "Node",
-    ]
+      "Redux",
+      "SASS",
+      "SASS",
+    ],
+
   },
   "languages": [{
-    "language": "English",
-    "fluency": "Upper Intermediate"
+    "lang": "English",
+    "type": "Upper Intermediate (B2)"
   },
   {
-    "language": "Ukrainian",
-    "fluency": "Native"
+    "lang": "Ukrainian",
+    "type": "Native"
   }
 ],
   "interests": [{

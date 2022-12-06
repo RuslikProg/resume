@@ -1,7 +1,7 @@
 import SectionTitle from '../components/SectionTitle';
 import { BsPersonCircle, BsCheckLg, BsFillCalendarEventFill} from "react-icons/bs";
 import { MdAddReaction } from "react-icons/md";
-import { FaUniversity } from "react-icons/fa";
+import { FaUniversity, FaLanguage } from "react-icons/fa";
 import { MdBusinessCenter } from "react-icons/md";
 import { RiContactsLine } from "react-icons/ri";
 import Skills from '../components/Skills';
@@ -11,7 +11,7 @@ import photoSRC from '../public/main_photo.jpg';
 import icons from '../utils/icons';
 
 const Section = ({data}) =>{
-  
+  console.log(data?.languages)
   return (
     <section className='p-2 mt-[50px]'>
       <div className='flex flex-wrap gap-6'>
@@ -31,6 +31,19 @@ const Section = ({data}) =>{
             label={'About me'}
             data={data?.basics?.summary}
           />
+          <div>
+          <SectionTitle
+            text={'Languages'}
+            icon={<FaLanguage/>}
+          />
+          {
+            data?.languages?.map((e,i)=>{
+              return <div key={i}>
+                      <p className='text-white'><span className='font-bold text-white mr-2'>{e.lang} :</span> {e.type}</p>
+                    </div>
+            })
+          }
+          </div>
         </div>
         <div className='w-full'>
           <SectionTitle
@@ -38,21 +51,15 @@ const Section = ({data}) =>{
             icon={<BsCheckLg/>}
           />
           <div className='flex justify-between flex-wrap gap-8 lg:gap-52 pb-4 border-b-2'>
-            
             <Skills
-              data={data?.skills?.proficient}
+              data={data?.skills?.advanced}
+              countStars={5}
+              skillsLabel={'Already use'}
+            />
+            <Skills
+              data={data?.skills?.medium}
               countStars={3}
-              skillsLabel={'Proficient'}
-            />
-            <Skills
-              data={data?.skills?.comfortable}
-              countStars={2}
-              skillsLabel={'Comfortable'}
-            />
-            <Skills
-              data={data?.skills?.familiar}
-              countStars={1}
-              skillsLabel={'Familiar'}
+              skillsLabel={'In progress'}
             />
           </div>
         </div>
