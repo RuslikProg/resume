@@ -1,10 +1,10 @@
 export const starsGerenerator = (count) => Array.from(Array(count).fill(null));
 
-const fetchData = async () => {
-  const response = await fetch("http://localhost:3000/api/information",{
-    cache: 'force-cache'
-  })
-  return await response.json();
+export async function loadPosts() {
+  // Call an external API endpoint to get posts
+  const res = await fetch('http://localhost:3000/api/information')
+  const data = await res.json()
+
+  return data;
 }
-export default fetchData;
 

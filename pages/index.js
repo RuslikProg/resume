@@ -1,4 +1,5 @@
 import Layout from '../components/Layout';
+import {loadPosts} from '../utils/index';
 
 export default function Home({data}) {
 
@@ -8,8 +9,8 @@ export default function Home({data}) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/information");
-  const data = await  res.json();
+
+  const data = await loadPosts();
 
   return {
     props: {
