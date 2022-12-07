@@ -8,10 +8,8 @@ export default function Home({data}) {
   )
 }
 
-export async function getServerSideProps() {
-
+export async function getStaticProps() {
   const data = await loadPosts();
-
   return {
     props: {
       data,
