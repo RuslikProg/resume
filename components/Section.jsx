@@ -76,7 +76,7 @@ const Section = ({data}) =>{
         />
       </div>
       <div className='flex flex-col flex-wrap justify-between pb-4 border-b-2'>
-        {data?.work.map((e,i)=>{
+        {data?.work?.map((e,i)=>{
           return <Article
                     key={i}
                     label={'at '+e?.name}
@@ -95,7 +95,7 @@ const Section = ({data}) =>{
         />
       </div>
       <div className='flex flex-col flex-wrap justify-between pb-4 border-b-2'>
-        {data?.education.map((e,i)=>{
+        {data?.education?.map((e,i)=>{
           return <Article
                     key={i}
                     label={' '+e?.institution}
@@ -114,7 +114,7 @@ const Section = ({data}) =>{
         />
       </div>
       <div className='flex flex-col flex-wrap justify-between pb-4 border-b-2'>
-        {data?.interests.map((e,i)=>{
+        {data?.interests?.map((e,i)=>{
           return <Article
                     key={i}
                     label={icons[e?.name]}
