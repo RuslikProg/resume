@@ -15,7 +15,7 @@ const Header = ({data}) => {
           target='_blank'
           className="flex justify-center items-center flex-row mt-4 gap-2 cursor-pointer w-[200px] h-[50px] bg-[#2556dd] hover:bg-[#2556dda9] text-white rounded-lg text-[16px] font-semibold">
           <VscFilePdf/>
-          View or Download CV
+          Download CV
         </Link>
       </div>
     </div>
