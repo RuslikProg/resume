@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
-import {loadPosts} from '../utils/fetch';
+import {getData} from '../utils/fetch';
 
- function Home({data}) {
+  function Home({data}) {
 
   return (
     <Layout data={data}/>
@@ -9,10 +9,10 @@ import {loadPosts} from '../utils/fetch';
 }
 
 export async function getStaticProps() {
-  const data = await loadPosts();
+  const data = await getData()
   return {
     props: {
-      data
+      data,
     },
   }
 };

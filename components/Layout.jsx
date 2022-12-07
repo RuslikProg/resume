@@ -2,8 +2,7 @@ import Header from '../components/Header';
 import Section from '../components/Section';
 import Footer from '../components/Footer';
 
-const Layout = ({children,data}) => {
-
+const Layout = ({data}) => {
   return (
     <div className="container mx-auto">
         <Header
@@ -15,7 +14,6 @@ const Layout = ({children,data}) => {
         <Footer
           data={data?.basics?.profiles}
         />
-      {children}
     </div>
   )
 }
