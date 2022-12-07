@@ -10,10 +10,30 @@ const Article = ({icon, label, data, coloredText, miniIcon , startDate, endDate,
                          </div>;
 
   const contactElement =  <div>
-                            <p><span className='font-bold uppercase text-white mr-2'>Location:</span>{detaledData?.basics?.location?.city}, {detaledData?.basics?.location?.countryCode}</p>
-                            <p><span className='font-bold uppercase text-white mr-2'>Email:</span>{detaledData?.basics?.email}</p>
-                            <p><span className='font-bold uppercase text-white mr-2'>Mobile:</span>{detaledData?.basics?.phone}</p>
-                            <p><span className='font-bold uppercase text-white mr-2'>Birth date:</span>{detaledData?.basics?.birthDate}</p>
+                            <p>
+                              <span className='font-bold uppercase text-white mr-2'>
+                                Location:
+                              </span>
+                              {detaledData?.basics?.location?.city}, {detaledData?.basics?.location?.countryCode}
+                            </p>
+                            <p>
+                              <span className='font-bold uppercase text-white mr-2'>
+                                Email:
+                              </span>
+                              {detaledData?.basics?.email}
+                            </p>
+                            <p>
+                              <span className='font-bold uppercase text-white mr-2'>
+                                Mobile:
+                              </span>
+                              {detaledData?.basics?.phone}
+                            </p>
+                            <p>
+                              <span className='font-bold uppercase text-white mr-2'>
+                                Birth date:
+                              </span>
+                              {detaledData?.basics?.birthDate}
+                            </p>
                           </div>;
   return (
     <div className='flex flex-col gap-2 p-2'>

@@ -7,7 +7,7 @@ export const cvInformation = {
     "email": "rkvacuk@gmail.com",
     "phone": "+380 (050) 612-40-52",
     "url": "https://johndoe.com",
-    "summary": "Hi, I'm a junior frontend developer. For the last two years, I have been studying JavaScript and how to change the way of thinking in general. I chose the React library to learn how to build web applications. Starting from simple components to small pet projects.First of all, I want to learn how to build modern web applications. Get practice writing clean code and be a team player.",
+    "summary": "Hi, I'm front-end developer. For the last two years, I have been studying JavaScript and how to change the way of thinking in general. I chose the React library to learn how to build web applications. Starting from simple components to small pet projects. First of all, i want to learn how to build modern web applications. Get practice writing clean code and be a team player. Secondly, I want to discover more soft skills and find new challenges for myself in a field that is constantly changing and does not stand still.",
     "location": {
       "address": "Yevropeyska st",
       "postalCode": "08132",
@@ -90,7 +90,6 @@ export const cvInformation = {
     "medium": [
       "Node",
       "Redux",
-      "SASS",
       "SASS",
     ],
 

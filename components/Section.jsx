@@ -11,16 +11,16 @@ import photoSRC from '../public/main_photo.jpg';
 import icons from '../utils/icons';
 
 const Section = ({data}) =>{
-  console.log(data?.languages)
+
   return (
     <section className='p-2 mt-[50px]'>
       <div className='flex flex-wrap gap-6'>
         <div className='flex items-center gap-8 flex-wrap'>
-            <Image
-              alt='Main_Photo'
-              src={photoSRC}
-              className='rounded-full object-cover'
-            />
+          <Image
+            alt='Main_Photo'
+            src={photoSRC}
+            className='rounded-full object-cover'
+          />
           <Article
             icon={<RiContactsLine/>}
             label={'Contact Information'}
@@ -39,7 +39,12 @@ const Section = ({data}) =>{
           {
             data?.languages?.map((e,i)=>{
               return <div key={i}>
-                        <p className='text-white'><span className='font-bold uppercase text-white mr-2'>{e.lang} :</span> {e.type}</p>
+                        <p className='text-white'>
+                          <span className='font-bold uppercase text-white mr-2'>
+                            {e.lang} :
+                          </span> 
+                          {e.type}
+                        </p>
                      </div>
             })
           }

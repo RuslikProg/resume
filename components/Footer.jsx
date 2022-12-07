@@ -8,10 +8,10 @@ const Footer = ({data}) => {
         return  <Link 
                   key={i}
                   href={e.url}>
-                      <span className='flex items-center justify-center w-[3rem] h-[3rem] bg-[#2556dd] rounded-full' >
+                      <span className='flex items-center justify-center w-[3rem] h-[3rem] bg-[#2556dd] rounded-full'>
                         {icons[e.network]}
                       </span>
-                </Link>   
+        </Link>   
       })}
     </div>
   )
