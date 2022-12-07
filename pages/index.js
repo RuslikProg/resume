@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-import {loadPosts} from '../utils/index';
+import {loadPosts} from '../utils/fetch';
 
  function Home({data}) {
 
