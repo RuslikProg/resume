@@ -3,7 +3,6 @@ import Layout from '../components/Layout';
 import {cvData} from '../public/data/inform';
 
 const Home = ()=>{
-  console.log(cvData)
   return (
     <Layout data={cvData}/>
   );

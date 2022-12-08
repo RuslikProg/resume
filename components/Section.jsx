@@ -16,11 +16,13 @@ const Section = ({data}) =>{
     <section className='p-2 mt-[50px]'>
       <div className='flex flex-wrap gap-6'>
         <div className='flex items-center gap-8 flex-wrap'>
-          <Image
-            alt='Main_Photo'
-            src={photoSRC}
-            className='rounded-full object-cover'
-          />
+          <div className='flex p-2 mx-auto sm:mx-0'>
+            <Image
+              alt='Main_Photo'
+              src={photoSRC}
+              className='rounded-full object-cover'
+            />
+          </div>
           <Article
             icon={<RiContactsLine/>}
             label={'Contact Information'}
@@ -31,7 +33,7 @@ const Section = ({data}) =>{
             label={'About me'}
             data={data?.basics?.summary}
           />
-          <div className='mb-2'>
+          <div className='mb-2 p-2'>
           <SectionTitle
             text={'Languages'}
             icon={<FaLanguage/>}
@@ -50,7 +52,7 @@ const Section = ({data}) =>{
           }
           </div>
         </div>
-        <div className='w-full'>
+        <div className='w-full p-2'>
           <SectionTitle
             text={'Skills'}
             icon={<BsCheckLg/>}
@@ -69,7 +71,7 @@ const Section = ({data}) =>{
           </div>
         </div>
       </div>
-      <div className='flex mt-8'>
+      <div className='flex mt-8 p-2'>
         <SectionTitle
           text={'Professional Experience'}
           icon={<MdBusinessCenter/>}
@@ -88,7 +90,7 @@ const Section = ({data}) =>{
           />
         })}
       </div>
-      <div className='flex mt-8'>
+      <div className='flex mt-8 p-2'>
         <SectionTitle
           text={'Education'}
           icon={<MdBusinessCenter/>}
@@ -107,7 +109,7 @@ const Section = ({data}) =>{
           />
         })}
       </div>
-      <div className='flex mt-8'>
+      <div className='flex mt-8 p-2'>
         <SectionTitle
           text={'Hobbies & Interests'}
           icon={<MdAddReaction/>}
