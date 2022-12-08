@@ -1,4 +1,4 @@
-export const cvInformation = {
+export const cvData = {
   "basics": {
     "name": "Ruslan Kvachuk",
     "label": "Front-End Developer",

@@ -1,12 +1,11 @@
 import Layout from '../components/Layout';
-import {getData} from '../utils/fetch';
+// import {getData} from '../utils/fetch';
+import {cvData} from '../public/data/inform';
 
-const Home = async()=>{
-  
-  const data = await getData();
-
+const Home = ()=>{
+  console.log(cvData)
   return (
-    <Layout data={data}/>
+    <Layout data={cvData}/>
   );
 }
 
