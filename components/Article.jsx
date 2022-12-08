@@ -11,25 +11,25 @@ const Article = ({icon, label, data, coloredText, miniIcon , startDate, endDate,
 
   const contactElement =  <div>
                             <p>
-                              <span className='font-bold uppercase text-white mr-2'>
+                              <span className='font-semibold uppercase text-white mr-2'>
                                 Location:
                               </span>
                               {detaledData?.basics?.location?.city}, {detaledData?.basics?.location?.countryCode}
                             </p>
                             <p>
-                              <span className='font-bold uppercase text-white mr-2'>
+                              <span className='font-semibold uppercase text-white mr-2'>
                                 Email:
                               </span>
                               {detaledData?.basics?.email}
                             </p>
                             <p>
-                              <span className='font-bold uppercase text-white mr-2'>
+                              <span className='font-semibold uppercase text-white mr-2'>
                                 Mobile:
                               </span>
                               {detaledData?.basics?.phone}
                             </p>
                             <p>
-                              <span className='font-bold uppercase text-white mr-2'>
+                              <span className='font-semibold uppercase text-white mr-2'>
                                 Birth date:
                               </span>
                               {detaledData?.basics?.birthDate}

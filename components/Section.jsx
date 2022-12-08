@@ -42,7 +42,7 @@ const Section = ({data}) =>{
             data?.languages?.map((e,i)=>{
               return <div key={i}>
                         <p className='text-white'>
-                          <span className='font-bold uppercase text-white mr-2'>
+                          <span className='font-semibold uppercase text-white mr-2'>
                             {e.lang} :
                           </span> 
                           {e.type}

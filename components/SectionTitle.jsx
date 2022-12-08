@@ -12,7 +12,7 @@ const SectionTitle = ({text, icon, boldText}) => {
                       {
                         boldText
                       ?
-                        <span className='flex items-center justify-center bg-white rounded-md uppercase text-xl font-semibold tracking-normal p-1'>
+                        <span className='flex items-center justify-center  bg-white rounded-md uppercase text-xl font-semibold tracking-normal p-1'>
                           {boldText}
                         </span> 
                       :

@@ -1,5 +1,11 @@
 import "./globals.css";
+import { Varela_Round } from '@next/font/google';
 
+const font = Varela_Round({
+  weight: ['400'],
+  style: ['normal'],
+  subsets: ['latin'],
+});
 const RootLayout = ({children})=>{
   return (
     <html lang="en">
@@ -10,7 +16,7 @@ const RootLayout = ({children})=>{
         <meta name="Kvachuk Ruslan CV" content="Kvachuk Ruslan resume, front-end developer" />
         <link rel="icon" href="/favicon-32x32.png" />
       </head>
-      <body>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }
