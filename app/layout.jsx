@@ -1,6 +1,6 @@
 import "./globals.css";
 
-const RootLayout = async({children})=>{
+const RootLayout = ({children})=>{
   return (
     <html lang="en">
       <head>
